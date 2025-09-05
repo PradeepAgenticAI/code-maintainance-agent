@@ -16,8 +16,8 @@ from pydantic import BaseModel, Field
 class GitTool(BaseTool):
     """Tool for Git operations."""
     
-    name = "git_tool"
-    description = "Performs Git operations like clone, branch creation, commit, and push"
+    name: str = "git_tool"
+    description: str = "Performs Git operations like clone, branch creation, commit, and push"
     
     def _run(self, operation: str, **kwargs) -> str:
         """Execute Git operations."""
@@ -71,8 +71,8 @@ class GitTool(BaseTool):
 class OpenRewriteTool(BaseTool):
     """Tool for OpenRewrite CLI operations."""
     
-    name = "openrewrite_tool"
-    description = "Installs OpenRewrite CLI and applies recipes"
+    name: str = "openrewrite_tool"
+    description: str = "Installs OpenRewrite CLI and applies recipes"
     
     def _run(self, operation: str, **kwargs) -> str:
         """Execute OpenRewrite operations."""
@@ -161,8 +161,8 @@ class OpenRewriteTool(BaseTool):
 class BuildTool(BaseTool):
     """Tool for build operations (Maven/Gradle)."""
     
-    name = "build_tool"
-    description = "Detects build tool and runs build/test commands"
+    name: str = "build_tool"
+    description: str = "Detects build tool and runs build/test commands"
     
     def _run(self, operation: str, **kwargs) -> str:
         """Execute build operations."""
@@ -212,8 +212,8 @@ class BuildTool(BaseTool):
 class ProjectAnalysisTool(BaseTool):
     """Tool for analyzing project structure and versions."""
     
-    name = "project_analysis_tool"
-    description = "Analyzes project to extract current Java and Spring Boot versions"
+    name: str = "project_analysis_tool"
+    description: str = "Analyzes project to extract current Java and Spring Boot versions"
     
     def _run(self, repo_path: str, build_tool: str) -> dict:
         """Analyze project to extract version information."""

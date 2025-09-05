@@ -332,8 +332,7 @@ def main():
         server_name="0.0.0.0",
         server_port=7860,
         share=False,
-        show_error=True,
-        show_tips=True
+        show_error=True
     )
 
 if __name__ == "__main__":

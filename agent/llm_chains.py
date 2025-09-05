@@ -2,9 +2,8 @@
 LLM chains for analysis and recipe generation.
 """
 
-from langchain.llms import OpenAI
-from langchain.chat_models import ChatOpenAI
-from langchain.prompts import ChatPromptTemplate, PromptTemplate
+from langchain_openai import ChatOpenAI
+from langchain_core.prompts import ChatPromptTemplate, PromptTemplate
 from langchain.chains import LLMChain
 from typing import List, Dict, Any
 import os

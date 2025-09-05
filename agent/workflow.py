@@ -6,7 +6,7 @@ import os
 import tempfile
 import json
 from typing import Dict, Any
-from langgraph import StateGraph, END
+from langgraph.graph import StateGraph, END
 from langchain.tools import BaseTool
 
 from .state import UpgradeState
