@@ -1,0 +1,10 @@
+langchain==0.1.0
+langgraph==0.0.20
+openai==1.6.1
+PyGithub==2.1.1
+requests==2.31.0
+python-dotenv==1.0.0
+gradio==4.8.0
+streamlit==1.28.0
+argparse
+subprocess32; python_version < '3.0'
